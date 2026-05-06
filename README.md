@@ -47,15 +47,9 @@ Cost is average token-based monetary cost per query scaled by 10⁶ (USD). At `t
 .
 ├── hllm/
 │   ├── Code/
-│   │   ├── aqua/               # AQuA inference & evaluation
-│   │   ├── CommonSenseQA/      # CSQA inference & evaluation
-│   │   ├── GSM8K/              # GSM8K inference & evaluation
-│   │   ├── GSM_Symbolic/       # GSM Symbolic P1/P2 inference & evaluation
-│   │   ├── MATH/               # MATH/MATH500 inference & evaluation
-│   │   ├── confidence/         # Router confidence scoring
-│   │   ├── grading/            # Answer extraction & grading utilities
-│   │   └── training_data/      # Labeled training CSVs + label construction scripts
-│   └── Outputs/                # Evaluation results
+│   │   Code used to train the routers or evaluate trained routers - not very clean, may use some of my own paths, variables, etc.
+        
+│   └── data_scripts/ here is code used to generate the data - the data itself is too large for me to upload, for now
 ```
 
 > **Note:** Trained router checkpoints (`router_deberta_v3_large_*/`) are not included in this repository due to file size. To reproduce them, follow the Training section below — the labeled training data and all training scripts are provided.
